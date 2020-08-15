@@ -34,14 +34,6 @@ class _BookingScreenState extends State<BookingScreen> {
     'Ngũ Hành Sơn',
   ]; // Option 2
   String _selectedProvince;
-  List<String> _homelane = [
-    'Hòa Cường Bắc',
-    'Thanh Bình',
-    'Thuận Phước',
-    'Thạch Thang',
-    'Hải Châu 1'
-  ]; // Option 2
-  String _selectedHomelane;
 
   @override
   Widget build(BuildContext context) {
@@ -261,56 +253,6 @@ class _BookingScreenState extends State<BookingScreen> {
                               padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
                               child: Container(
                                 height: 35.0,
-                                child: DropdownButtonFormField(
-                                  hint: Text(
-                                      'Phường'), // Not necessary for Option 1
-                                  value: _selectedHomelane,
-                                  onChanged: (newValue) {
-                                    setState(() {
-                                      _selectedHomelane = newValue;
-                                    });
-                                  },
-                                  items: _homelane.map((location) {
-                                    return DropdownMenuItem(
-                                      child: new Text(location),
-                                      value: location,
-                                    );
-                                  }).toList(),
-                                  style: TextStyle(
-                                    fontFamily: "Segoe UI",
-                                    fontWeight: FontWeight.w600,
-                                    fontSize: 16,
-                                    color: Colors.black,
-                                  ),
-                                  decoration: InputDecoration(
-                                    isDense: true,
-                                    fillColor: Color(0xffecebeb),
-                                    enabledBorder: UnderlineInputBorder(
-                                        borderSide: const BorderSide(
-                                      color: Color(0xffC0C8CF),
-                                    )),
-                                    focusedBorder: UnderlineInputBorder(
-                                      borderSide: const BorderSide(
-                                        color: Color(0xffC0C8CF),
-                                      ),
-                                    ),
-                                    prefixIcon: Container(
-                                      width: 20.0,
-                                      height: 20.0,
-                                      alignment: Alignment.center,
-                                      child: Icon(Icons.home),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                            SizedBox(
-                              height: 15,
-                            ),
-                            Container(
-                              padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
-                              child: Container(
-                                height: 35.0,
                                 child: TextFormField(
                                   style: TextStyle(
                                     fontFamily: "Segoe UI",
@@ -338,6 +280,45 @@ class _BookingScreenState extends State<BookingScreen> {
                                         height: 20.0,
                                         alignment: Alignment.center,
                                         child: Icon(Icons.location_on)),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 15,
+                            ),
+                            Container(
+                              padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
+                              child: Container(
+                                height: 35.0,
+                                child: TextFormField(
+                                  style: TextStyle(
+                                    fontFamily: "Segoe UI",
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 16,
+                                    color: Colors.black,
+                                  ),
+                                  cursorWidth: 2.0,
+                                  keyboardType: TextInputType.phone,
+                                  cursorColor: Color(0xff666666),
+                                  decoration: InputDecoration(
+                                    isDense: true,
+                                    fillColor: Color(0xffecebeb),
+                                    enabledBorder: UnderlineInputBorder(
+                                        borderSide: const BorderSide(
+                                      color: Color(0xffC0C8CF),
+                                    )),
+                                    focusedBorder: UnderlineInputBorder(
+                                      borderSide: const BorderSide(
+                                        color: Color(0xffC0C8CF),
+                                      ),
+                                    ),
+                                    hintText: "Số điện thoại",
+                                    prefixIcon: Container(
+                                        width: 20.0,
+                                        height: 20.0,
+                                        alignment: Alignment.center,
+                                        child: Icon(Icons.phone)),
                                   ),
                                 ),
                               ),

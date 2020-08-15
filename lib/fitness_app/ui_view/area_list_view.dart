@@ -31,7 +31,7 @@ class _AreaListViewState extends State<AreaListView>
 
   List<ServiceObject> areaListData = <ServiceObject>[
     ServiceObject(
-      image: 'assets/fitness_app/area1.png',
+      image: 'assets/fitness_app/area2.png',
       title: 'Đặt lịch khám',
       route: 'booking',
     ),
@@ -39,14 +39,6 @@ class _AreaListViewState extends State<AreaListView>
       image: 'assets/fitness_app/area1.png',
       title: 'Nhà thuốc',
       route: 'store',
-    ),
-    ServiceObject(
-      image: 'assets/fitness_app/area1.png',
-      title: 'Hỏi bác sĩ',
-    ),
-    ServiceObject(
-      image: 'assets/fitness_app/area1.png',
-      title: 'Khám tại nhà',
     ),
   ];
 
@@ -74,7 +66,7 @@ class _AreaListViewState extends State<AreaListView>
             transform: Matrix4.translationValues(
                 0.0, 30 * (1.0 - widget.mainScreenAnimation.value), 0.0),
             child: AspectRatio(
-              aspectRatio: 1.0,
+              aspectRatio: 2.0,
               child: Padding(
                 padding: const EdgeInsets.only(left: 8.0, right: 8),
                 child: GridView(
