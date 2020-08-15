@@ -413,9 +413,12 @@ class _BookingScreenState extends State<BookingScreen> {
                       padding: const EdgeInsets.fromLTRB(50.0, 0.0, 50.0, 0.0),
                       child: Container(
                         decoration: BoxDecoration(
+                          color: Color(0xff1DA1A2),
+                          borderRadius: BorderRadius.circular(23.00),
+                          border: Border.all(
                             color: Color(0xff1DA1A2),
-                            borderRadius: BorderRadius.circular(23.00),
-                            border: Border.all(color: Colors.white)),
+                          ),
+                        ),
                         child: Padding(
                           padding: EdgeInsets.all(14.0),
                           child: InkWell(
@@ -427,7 +430,7 @@ class _BookingScreenState extends State<BookingScreen> {
                                   fontFamily: "Montserrat",
                                   fontWeight: FontWeight.w500,
                                   fontSize: 16,
-                                  color: Colors.black),
+                                  color: Colors.white),
                             ),
                           ),
                         ),
@@ -448,18 +451,306 @@ class _BookingScreenState extends State<BookingScreen> {
         context: context,
         builder: (BuildContext bc) {
           return Container(
-            child: new Wrap(
-              children: <Widget>[
-                new ListTile(
-                    leading: new Icon(Icons.music_note),
-                    title: new Text('Music'),
-                    onTap: () => {}),
-                new ListTile(
-                  leading: new Icon(Icons.videocam),
-                  title: new Text('Video'),
-                  onTap: () => {},
+            color: Color(0xFF737373),
+            width: double.infinity,
+            height: 400,
+            child: Container(
+              decoration: BoxDecoration(
+                color: FintnessAppTheme.background,
+                borderRadius: new BorderRadius.only(
+                  topLeft: const Radius.circular(23.0),
+                  topRight: const Radius.circular(23.0),
                 ),
-              ],
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: new ListView(
+                  children: <Widget>[
+                    new Container(
+                      height: 100.00,
+                      decoration: BoxDecoration(
+                        color: Color(0xffffffff),
+                        borderRadius: BorderRadius.circular(16.00),
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.all(10.0),
+                        child: Row(
+                          children: <Widget>[
+                            Placeholder(
+                              fallbackWidth: 80,
+                              fallbackHeight: 30,
+                            ),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Expanded(
+                              child: Column(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: <Widget>[
+                                  new Text(
+                                    "Bệnh viện đa khoa Đà Nẵng",
+                                    style: TextStyle(
+                                      fontFamily: "Montserrat",
+                                      fontWeight: FontWeight.w500,
+                                      fontSize: 20,
+                                      color: Color(0xff1da1a2),
+                                    ),
+                                  ),
+                                  Row(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    children: <Widget>[
+                                      Icon(
+                                        Icons.star,
+                                        color: Colors.yellow,
+                                      ),
+                                      Icon(
+                                        Icons.star,
+                                        color: Colors.yellow,
+                                      ),
+                                      Icon(
+                                        Icons.star,
+                                        color: Colors.yellow,
+                                      ),
+                                      Icon(
+                                        Icons.star,
+                                        color: Colors.yellow,
+                                      ),
+                                      Icon(
+                                        Icons.star_half,
+                                        color: Colors.yellow,
+                                      ),
+                                      Text(
+                                        "4.5",
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                          fontFamily: "Montserrat",
+                                          fontWeight: FontWeight.w600,
+                                          fontSize: 14,
+                                          color: Color(0xff7f878e),
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        width: 10,
+                                      ),
+                                      Text(
+                                        "120 reviews",
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                          fontFamily: "Montserrat",
+                                          fontWeight: FontWeight.w600,
+                                          fontSize: 14,
+                                          color: Color(0xff7f878e),
+                                        ),
+                                      )
+                                    ],
+                                  )
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 15,
+                    ),
+                    Row(
+                      children: <Widget>[
+                        Text(
+                          'Bác sĩ của bạn',
+                          textAlign: TextAlign.left,
+                          style: TextStyle(
+                            fontFamily: FintnessAppTheme.fontName,
+                            color: FintnessAppTheme.lightText,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 18,
+                            letterSpacing: 0.5,
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 15,
+                    ),
+                    new Container(
+                      decoration: BoxDecoration(
+                        color: Color(0xffffffff),
+                        borderRadius: BorderRadius.circular(16.00),
+                      ),
+                      child: Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: Column(
+                            children: <Widget>[
+                              Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Placeholder(
+                                    fallbackWidth: 120,
+                                    fallbackHeight: 120,
+                                  ),
+                                  SizedBox(
+                                    width: 10,
+                                  ),
+                                  Expanded(
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: <Widget>[
+                                        new Text(
+                                          "Hồ Thiện Quân",
+                                          style: TextStyle(
+                                            fontFamily: "Montserrat",
+                                            fontWeight: FontWeight.w500,
+                                            fontSize: 20,
+                                            color: Color(0xff1da1a2),
+                                          ),
+                                        ),
+                                        new Text(
+                                          "Tiến sĩ",
+                                          style: TextStyle(
+                                            fontFamily: "Montserrat",
+                                            fontWeight: FontWeight.w500,
+                                            fontSize: 16,
+                                            color: Color(0xff2a3743),
+                                          ),
+                                        ),
+                                        Row(
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.center,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.start,
+                                          children: <Widget>[
+                                            Icon(
+                                              Icons.star,
+                                              color: Colors.yellow,
+                                            ),
+                                            Icon(
+                                              Icons.star,
+                                              color: Colors.yellow,
+                                            ),
+                                            Icon(
+                                              Icons.star,
+                                              color: Colors.yellow,
+                                            ),
+                                            Icon(
+                                              Icons.star,
+                                              color: Colors.yellow,
+                                            ),
+                                            Icon(
+                                              Icons.star_half,
+                                              color: Colors.yellow,
+                                            ),
+                                            Text(
+                                              "4.5",
+                                              textAlign: TextAlign.center,
+                                              style: TextStyle(
+                                                fontFamily: "Montserrat",
+                                                fontWeight: FontWeight.w600,
+                                                fontSize: 14,
+                                                color: Color(0xff7f878e),
+                                              ),
+                                            ),
+                                            SizedBox(
+                                              width: 10,
+                                            ),
+                                            Text(
+                                              "120 reviews",
+                                              textAlign: TextAlign.center,
+                                              style: TextStyle(
+                                                fontFamily: "Montserrat",
+                                                fontWeight: FontWeight.w600,
+                                                fontSize: 14,
+                                                color: Color(0xff7f878e),
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              ExpansionTile(
+                                title: Text('Show more'),
+                                children: [
+                                  Text(
+                                      'Giáo sư Quân đã có hơn 30 năm kinh nghiệm làm việc trong lĩnh vực gây mê và giảm đau tại Pháp, Dubai, Anh Quốc, Thái Lan và Việt Nam. Ông đóng góp tích cực xây dựng những tổ chức về gây mê và đặc biệt là gây tê vùng.'),
+                                ],
+                              ),
+                            ],
+                          )),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        children: <Widget>[
+                          SizedBox(width: 30),
+                          Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(23.00),
+                                border: Border.all(
+                                  color: Color(0xff1DA1A2),
+                                ),
+                              ),
+                              child: Padding(
+                                padding: EdgeInsets.all(14.0),
+                                child: InkWell(
+                                  onTap: () => {Navigator.pop(context)},
+                                  child: new Text(
+                                    "Hủy",
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(
+                                      fontFamily: "Montserrat",
+                                      fontWeight: FontWeight.w500,
+                                      fontSize: 16,
+                                      color: Color(0xff1DA1A2),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(width: 30),
+                          Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                  color: Color(0xff1DA1A2),
+                                  borderRadius: BorderRadius.circular(23.00),
+                                  border: Border.all(color: Colors.white)),
+                              child: Padding(
+                                padding: EdgeInsets.all(14.0),
+                                child: InkWell(
+                                  onTap: () => {
+                                    Navigator.pop(context),
+                                    Navigator.pop(context)
+                                  },
+                                  child: new Text(
+                                    "Đặt lịch",
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(
+                                        fontFamily: "Montserrat",
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 16,
+                                        color: Colors.white),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(width: 30),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ),
             ),
           );
         });
@@ -467,7 +758,7 @@ class _BookingScreenState extends State<BookingScreen> {
 
   List<BaseGridSelectorItem> _getTails() {
     return [
-      BaseGridSelectorItem(key: 1, label: "Khoa nhi"),
+      BaseGridSelectorItem(key: 1, label: "Tất cả"),
       BaseGridSelectorItem(key: 2, label: "Khoa ngoại tổng quát"),
       BaseGridSelectorItem(key: 3, label: "Khoa thần kinh"),
       BaseGridSelectorItem(key: 4, label: "Khoa mắt"),

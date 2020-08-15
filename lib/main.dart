@@ -2,6 +2,7 @@ import 'dart:io';
 import 'package:best_flutter_ui_templates/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:best_flutter_ui_templates/fitness_app/my_diary/booking_page.dart';
+import 'package:best_flutter_ui_templates/fitness_app/my_diary/store_page.dart';
 import 'package:flutter/services.dart';
 import 'package:best_flutter_ui_templates/fitness_app/fitness_app_home_screen.dart';
 
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
       routes: {
         // When navigating to the "/" route, build the FirstScreen widget.
         '/booking': (context) => BookingScreen(),
+        '/store': (context) => StoreScreen(),
         // When navigating to the "/second" route, build the SecondScreen widget.
       },
       debugShowCheckedModeBanner: false,
