@@ -126,7 +126,7 @@ class _StoreScreenState extends State<StoreScreen> {
               },
             ),
             title: new Text(
-              "Cửa hàng",
+              "Nhà thuốc",
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontFamily: "Montserrat",

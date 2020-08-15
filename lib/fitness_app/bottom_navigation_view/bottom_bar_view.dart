@@ -172,7 +172,7 @@ class _BottomBarViewState extends State<BottomBarView>
                             widget.addClick();
                           },
                           child: Icon(
-                            Icons.add,
+                            Icons.calendar_today,
                             color: FintnessAppTheme.white,
                             size: 32,
                           ),

@@ -80,7 +80,9 @@ class _FitnessAppHomeScreenState extends State<FitnessAppHomeScreen>
         ),
         BottomBarView(
           tabIconsList: tabIconsList,
-          addClick: () {},
+          addClick: () {
+            Navigator.pushNamed(context, '/calendar');
+          },
           changeIndex: (int index) {
             if (index == 0) {
               animationController.reverse().then<dynamic>((data) {
