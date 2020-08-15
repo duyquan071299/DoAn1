@@ -101,6 +101,7 @@ class _BookingScreenState extends State<BookingScreen> {
                       child: Padding(
                         padding: const EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 8.0),
                         child: GridSelector<int>(
+                          title: '',
                           backgroundSelectedColor: Color(0xff1DA1A2),
                           backgroundColor: FintnessAppTheme.background,
                           titleTextStyle: TextStyle(
