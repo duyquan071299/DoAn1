@@ -170,6 +170,7 @@ class _StoreScreenState extends State<StoreScreen> {
                       child: Padding(
                         padding: const EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 8.0),
                         child: GridSelector<int>(
+                          title: 'title',
                           backgroundSelectedColor: Color(0xff1DA1A2),
                           backgroundColor: FintnessAppTheme.background,
                           titleTextStyle: TextStyle(
