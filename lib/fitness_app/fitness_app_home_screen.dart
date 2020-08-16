@@ -1,5 +1,6 @@
 import 'package:best_flutter_ui_templates/fitness_app/community/community_screen.dart';
 import 'package:best_flutter_ui_templates/fitness_app/models/tabIcon_data.dart';
+import 'package:best_flutter_ui_templates/fitness_app/profile/profile.dart';
 import 'package:best_flutter_ui_templates/fitness_app/traning/training_screen.dart';
 import 'package:flutter/material.dart';
 import 'bottom_navigation_view/bottom_bar_view.dart';
@@ -100,8 +101,7 @@ class _FitnessAppHomeScreenState extends State<FitnessAppHomeScreen>
                   return;
                 }
                 setState(() {
-                  tabBody =
-                      TrainingScreen(animationController: animationController);
+                  tabBody = UserProfile();
                 });
               });
             } else if (index == 2) {
